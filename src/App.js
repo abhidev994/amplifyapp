@@ -9,7 +9,7 @@ function App() {
             <h1>Abhinav Gundla</h1>
             <h2>Javascript Engineer, Full Stack Developer</h2>
             <span class="and">&amp;</span>
-            <h2>Angular Enthusiast</h2>
+            <h2>Angular Enthusiast </h2>
           </div>
 
           <div class="contact">
