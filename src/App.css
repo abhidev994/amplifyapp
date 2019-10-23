@@ -20,3 +20,112 @@
 .App-link {
   color: #09d3ac;
 }
+:root {
+  --dark-jungle-green: #1C1E21;
+  --alice-blue: #F4F8FF;
+  --pewter-blue: #8DA1B7;
+  --azureish-white: #E3EAF2;
+  --silver-lake-blue: #5E83BA;
+  --body: 'Lato', sans-serif;
+  --headings: 'Raleway', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+body,
+html {
+  color: var(--dark-jungle-green);
+  font-family: var(--body);
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--alice-blue);
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headings);
+  margin: 0;
+}
+
+.card {
+  animation: fadeIn 1s ease-in;
+  background-color: var(--azureish-white);
+  border-radius: 0.5em;
+  box-shadow: 0 0.25em 0.5em rgba(28, 30, 33, 0.45);
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+.me h1 {
+  font-weight: 700;
+}
+
+.me h2 {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.me .and {
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 0.5;
+}
+
+.contact {
+  margin: 1em 0;
+}
+
+.contact p {
+  margin: 0.5em 0;
+}
+
+.find-me {
+  display: flex;
+  justify-content: center;
+}
+
+.find-me a {
+  color: var(--dark-jungle-green);
+  cursor: pointer;
+  font-size: 1em;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.find-me a+a {
+  margin-left: 0.5em;
+}
+
+.find-me a .fa-circle {
+  color: var(--pewter-blue);
+  transition: color 200ms ease-in;
+}
+
+.find-me a:hover .fa-circle {
+  color: var(--silver-lake-blue);
+}
+
+@media (min-width: 48em) {
+  .card {
+      padding: 2em;
+      min-width: 30em;
+  }
+}
